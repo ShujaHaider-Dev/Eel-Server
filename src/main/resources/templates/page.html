@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Eel-Server Currently Registered Services</title>
+</head>
+<body>
+<table>
+    <th:block th:each="service : ${registered}">
+        <tr>
+            <td th:text="${service.name}">...</td>
+            <td th:text="${service.language}">...</td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>
